@@ -1,1 +1,0 @@
-CREATE TABLE mein_test1 (nummer INT, vorname VARCHAR(10));
