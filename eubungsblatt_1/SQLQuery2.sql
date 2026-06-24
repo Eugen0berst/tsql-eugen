@@ -1,6 +1,7 @@
 --DROP TABLE abteilung;
 --DROP TABLE arbeitszeitmodell;
 --DROP TABLE familienstand;
+--DROP TABLE mitarbeiter;
 
 CREATE TABLE abteilung(
 abtnr INT IDENTITY(1,1) PRIMARY KEY,
@@ -8,13 +9,13 @@ abtbez VARCHAR(100)
 );
 
 CREATE TABLE arbeitszeitmodell (
-model_code CHAR(2) PRIMARY KEY,
+modell_code CHAR(2) PRIMARY KEY,
 az_bez VARCHAR(50)
 );
 
 CREATE TABLE familienstand (
 f_id INT IDENTITY(1,1) PRIMARY KEY,
-fam_bez VARCHAR(50)
+fam_bez VARCHAR(50));
 
 CREATE TABLE mitarbeiter (
 ma_id INT IDENTITY (1,1),
@@ -25,12 +26,13 @@ plz VARCHAR(5),
 ort VARCHAR(50),
 gebdatum DATE,
 f_id INT,
-azm_id CHAR(2),
 abt_nr INT,
+azm_id CHAR(2),
 CONSTRAINT PK_mitarbeiter PRIMARY KEY (ma_id),
 CONSTRAINT FK_ma_fam_f_id FOREIGN KEY (f_id) REFERENCES familienstand(f_id),
-CONSTRAINT FK_ma_azm_azm_id FOREIGN KEY (amz_id) REFERENCES arbeitszeitmodell(modell_code),
-CONSTRAINT FK_ma_abt_abt_nr FOREIGN KEY (abt_id) REFERENCES abteilung(abtnr)
+CONSTRAINT FK_ma_azm_azm_id FOREIGN KEY (azm_id) REFERENCES arbeitszeitmodell(modell_code),
+CONSTRAINT FK_ma_abt_abt_nr FOREIGN KEY (abt_nr) REFERENCES abteilung(abtnr)
 );
 
 SELECT * FROM mitarbeiter;
+SELECT * FROM familienstand;

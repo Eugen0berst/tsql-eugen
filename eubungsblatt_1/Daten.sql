@@ -2,26 +2,70 @@ INSERT INTO abteilung VALUES
 ('Personal'),
 ('Vertrieb'),
 ('Buchhaltung'),
-('IT		 '),
+('IT'),
 ('Entwicklung'),
 ('Produktion '),
-('Einkauf	 '),
-('Logistik	 '),
-('Verwaltung ');
+('Einkauf'),
+('Logistik'),
+('Verwaltung');
 
-INSERT INTO 
+INSERT INTO arbeitszeitmodell VALUES
+('ho', 'HomeOffice'),
+('tz', 'Teilzeit'),
+('vz', 'Vollzeit'),
+('mm', 'Minijob');
+
+INSERT INTO familienstand VALUES
+('ledig'),
+('verheiratet'),
+('geschieden'),
+('verwitwet'),
+('eingetr. Lebensgemeinschaft');
 
 
+INSERT INTO mitarbeiter VALUES
+('Fahrer', 'Bob', 'Mozartstr. 7', '90768', 'Fuerth', '1972-11-02', 5, 7, 'vz'),
+('Platz', 'Alexander', 'Lessingstr. 72', '91054', 'Erlangen', '1955-08-01', 2, 7, 'vz'),
+('Kreuz', 'Andreas', 'Ringstr. 40',	'90765', 'Fuerth', '1974-04-26', 3, 2, 'ho'),
+('Geber', 'Ann', 'Schillerstr. 25',	'90762', 'Fuerth', '1987-03-17', 3, 9, 'vz'),
+('Zug', 'Ann', 'Lindenweg 12', '90411', 'Nuernberg', '1996-03-20', 5, 2, 'mm' ),
+('Bolika', 'Anna', 'Bahnhofstr. 142', '90425', 'Nuernberg', '1981-04-20', 5, 6, 'vz'),
+('Nass', 'Anna', 'Dorfstr. 18',	'90409', 'Nuernberg', '1959-02-10', 2, 5, 'ho'),
+('Theke', 'Anna', 'Kirchplatz 60', '91052', 'Erlangen', '1964-01-23', 4, 5, 'tz'),
+('Höhle', 'Axel', 'Mühlgasse 94', '90766', 'Fuerth', '1969-08-04', 3, 6, 'vz'),
+('Diener', 'Bernhard', 'Mühlgasse 69', '90763', 'Fuerth', '1961-05-28', 5, 3, 'vz');
 
+INSERT INTO Mitarbeiter VALUES
+(11, 'Yard', 'Bill', 'Ringstr. 117', '90427', 'Nuernberg', '1966-10-13', 1, 9, 'vz'),
+(12, 'Essel', 'Bren', 'Bahnhofstr. 50', '90403', 'Nuernberg', '1980-02-07', 1, 3, 'vz'), 
+(13, 'Grube', 'Claire', 'Hauptstr. 34', '90408', 'Nuernberg', '1962-01-14', 5, 9, 'vz'), 
+(14, 'Erchen', 'Dick', 'Beethovenstr. 98', '90402', 'Nuernberg', '1983-05-19', 1, 3, 'ho'), 
+(15, 'Tator', 'Dick', 'Wiesenweg 147', '90419', 'Nuernberg', '1960-12-09', 5, 9, 'vz'), 
+(16, 'Reich', 'Frank', 'Mozartstr. 121', '91058', 'Erlangen', '1977-03-04', 2, 4, 'tz'), 
+(17, 'Brandwein', 'Franz', 'Lindenweg 33', '90765', 'Fuerth', '1988-07-20', 1, 8, 'vz'), 
+(18, 'Steiner', 'Gerold', 'Schillerstr. 3', '91056', 'Erlangen', '1957-07-01', 4, 7, 'vz'), 
+(19, 'Wurst', 'Gutfried', 'Schulstr. 99', '90768', 'Fuerth', '1968-01-05', 1, 7, 'mm'), 
+(20, 'Maul', 'Hans', 'Marktplatz 55', '90425', 'Nuernberg', '1975-09-27', 3, 1, 'vz'), 
+(21, 'Bo', 'Harry', 'Goethestr. 85', '90409', 'Nuernberg', '1990-02-08', 3, 9, 'vz'), 
+(22, 'Witzka', 'Heide', 'Gartenstr. 14', '90762', 'Fuerth', '1971-11-10', 5, 1, 'ho'), 
+(23, 'Ser', 'Kai', 'Ringstr. 129', '90763', 'Fuerth', '1985-08-12', 2, 4, 'vz'), 
+(24, 'Kästchen', 'Karo', 'Hauptstr. 81', '90419', 'Nuernberg', '1963-04-25', 5, 3, 'vz'), 
+(25, 'Milch', 'Marga', 'Dorfstr. 104', '90408', 'Nuernberg', '1958-09-30', 4, 2, 'vz'), 
+(26, 'Hari', 'Martha', 'Lessingstr. 5', '90766', 'Fuerth', '1982-06-03', 3, 10, 'vz'), (
+(27, 'Bellenbaum', 'Mira', 'Schulstr. 59', '90403', 'Nuernberg', '1965-08-16', 2, 4, 'tz'), 
+(28, 'Päde', 'Otto', 'Beethovenstr. 45', '90768', 'Fuerth', '1986-04-22', 5, 8, 'vz'), 
+(29, 'Lahner', 'Paul', 'Marktplatz 7', '90411', 'Nuernberg', '1979-09-08', 4, 2, 'vz'), 
+(30, 'Silie', 'Peter', 'Gartenstr. 49', '90427', 'Nuernberg', '1998-02-18', 1, 9, 'vz'), 
+(31, 'Morris', 'Philip', 'Hauptstr. 19', '90402', 'Nuernberg', '1956-07-11', 1, 8, 'ho'), 
+(32, 'Verlust', 'Rainer', 'Mozartstr. 131', '90425', 'Nuernberg', '1967-06-09', 2, 6, 'vz'), 
+(33, 'Schreiber', 'Roman', 'Kirchplatz 88', '90765', 'Fuerth', '1970-05-21', 4, 3, 'vz'), 
+(34, 'Wolke', 'Rosa', 'Lessingstr. 60', '90409', 'Nuernberg', '1993-04-17', 1, 7, 'mm'), 
+(35, 'Paine', 'Sham', 'Schillerstr. 47', '90411', 'Nuernberg', '1992-07-02', 3, 6, 'tz'), 
+(36, 'Buktu', 'Tim', 'Ringstr. 6', '90763', 'Fuerth', '1984-08-13', 5, 1, 'vz'), 
+(37, 'Streit', 'Wilma', 'Bahnhofstr. 121', '90403', 'Nuernberg', '1995-10-24', 3, 10, 'vz'),
+(38, 'See', 'Wolfgang', 'Hauptstr. 22', '90419', 'Nuernberg', '1976-12-15', 2, 1, 'vz');
 
-
-('Fahrer', 'Bob', 'Mozartstr. 7', '90768', 'Fuerth'	02.11.1972	eingetr. Lebensgemein-schaft 	'7', Vollzeit 
-('Platz', 'Alexander', 'Lessingstr. 72', '91054', 'Erlangen' 01.08.1955	verheiratet 	'7', Vollzeit 
-('Kreuz', 'Andreas', 'Ringstr. 40',	'90765', 'Fuerth'	26.04.1974	3', Vertrieb 	HomeOffice 
-('Geber', 'Ann', 'Schillerstr. 25',	'90762', 'Fuerth'	17.03.1987	3', Verwaltung 	Vollzeit 
-('Zug', 'Ann', 'Lindenweg 12', '90411', 'Nuernberg' 	20.03.1996	eingetr. Lebensgemein-schaft 	Vertrieb 	Minijob 
-('Bolika', 'Anna', 'Bahnhofstr. 142', '90425', 'Nuernberg' 	20.04.1981	eingetr. Lebensgemein-schaft 	Entwicklung 	Vollzeit 
-('Nass', 'Anna', 'Dorfstr. 18',	'90409', 'Nuernberg' 	10.02.1959	verheiratet 	'5', HomeOffice 
-('Theke', 'Anna', 'Kirchplatz 60', '91052', 'Erlangen'	23.01.1964	verwitwet 	'5', Teilzeit 
-('Höhle', 'Axel', 'Mühlgasse 94', '90766', 'Fuerth '	04.08.1969	3', Entwicklung 	Vollzeit 
-('Diener', 'Bernhard', 'Mühlgasse 69 '90763', 'Fuerth '	28.05.1961	eingetr. Lebensgemein-schaft 	Marketing 	Vollzeit 
+SELECT * FROM abteilung
+SELECT * FROM arbeitszeitmodell
+SELECT * FROM familienstand
+SELECT * FROM mitarbeiter
