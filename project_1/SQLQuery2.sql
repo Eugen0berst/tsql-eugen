@@ -67,4 +67,12 @@ INSERT INTO mein_test4 VALUES
 (3, 'Karl2'), 
 (20, 'Klara3');
 
+create table kermit_archive_2 (
+id int identity(1,1),
+vname varchar(10)
+);
 
+insert into kermit_archive_2
+select vorname from kermit;
+
+SELECT * FROM kermit_archive_2 (

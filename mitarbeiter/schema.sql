@@ -36,3 +36,17 @@ CONSTRAINT FK_ma_abt_abt_nr FOREIGN KEY (abt_nr) REFERENCES abteilung(abtnr)
 );
 
 --select * from mitarbeiter;
+
+CREATE TABLE skills (
+s_id INT IDENTITY(1,1) PRIMARY KEY,
+s_bez VARCHAR(100) not null
+);
+
+
+create table ma_skills (
+ma_id int,
+s_id int,
+primary key (ma_id, s_id),
+foreign key (ma_id) references mitarbeiter (ma_id),
+foreign key (s_id) references skills (s_id)
+);
