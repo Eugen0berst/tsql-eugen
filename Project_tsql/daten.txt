@@ -1,7 +1,0 @@
-1 - Rock
-2 - Pop
-3 - Jazz
-4 - Hip-Hop
-5 - Klassik
-6 - Electronic
-7 - Reggae

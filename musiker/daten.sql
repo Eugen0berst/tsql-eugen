@@ -84,6 +84,9 @@ select titel, interpret.name, genre.genre from titel
 join interpret on titel.interpret_id = interpret.i_id
 join genre on titel.genre_id = genre.g_id
 
+select * from titel
+
+
 INSERT INTO titel (titel, interpret_id, genre_id) VALUES
 ('Satisfaction', 1, 1),
 ('Start Me Up', 1, 1),
@@ -143,24 +146,26 @@ INSERT INTO titel (titel, interpret_id, genre_id) VALUES
 ('Papercut', 10, 1),
 ('Somewhere I Belong', 10, 1)
 
+
 select * from genre;
 select * from interpret;
+
 select * from titel;
 
-INSERT INTO veranstaltungsort VALUES
-('Nuernberg'), 
+insert into veranstaltungsort values 
+('Nuernberg'),
 ('Fuerth'),
 ('Elan-gen'),
 ('Dortmund'),
-('Vegas'),
+('Vegas'), 
 ('Nuernberg');
 
+UPDATE veranstaltungsort SET ort_name='Erlangen' WHERE ort_name='Elan-gen';
+UPDATE veranstaltungsort SET ort_name='Eryasdlfjlangen' WHERE v_id=3;
 UPDATE veranstaltungsort SET ort_name='Erlangen' WHERE v_id=3;
 
-UPDATE veranstaltungsort SET ort_name='Erlangen' WHERE ort_name='Elan-gen';
 
-SELECT * FROM veranstaltungsort;
-
+select * from veranstaltungsort;
 
 INSERT INTO in_ver (i_nr, v_nr, datum_von, datum_bis) VALUES
 (1, 1, '2026-03-10', '2026-03-11'),
@@ -215,5 +220,4 @@ INSERT INTO in_ver (i_nr, v_nr, datum_von, datum_bis) VALUES
 (2, 1, '2026-03-03', '2026-03-04'),
 (1, 2, '2027-05-05', '2027-05-05');
 
-SELECT * FROM in_ver;
-
+select * from in_ver;
