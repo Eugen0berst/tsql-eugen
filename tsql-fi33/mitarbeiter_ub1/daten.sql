@@ -12,6 +12,8 @@ INSERT INTO abteilung VALUES
 ('Logistik'),
 ('Verwaltung');
 
+select * from abteilung
+
 
 INSERT INTO arbeitszeitmodell VALUES
 ('ho', 'HomeOffice'),
@@ -31,6 +33,8 @@ INSERT INTO familienstand VALUES
 ('geschieden'),
 ('verwitwet'),
 ('eingetr. Lebensgemeinschaft');
+
+select * from familienstand
 
 
 INSERT INTO mitarbeiter  VALUES 
@@ -87,6 +91,9 @@ INSERT INTO Mitarbeiter (nname, vname, str_hsnr, plz, ort, gebdatum, f_id, abt_n
 ('Streit', 'Wilma', 'Bahnhofstr. 121', '90403', 'Nuernberg', '1995-10-24', 3, 10, 'vz'), 
 ('See', 'Wolfgang', 'Hauptstr. 22', '90419', 'Nuernberg', '1976-12-15', 2, 1, 'vz');
 
+select * from mitarbeiter;
+
+
 insert into skills values
 ('Java-Programmierung'),
 ('Netzwerk'),
@@ -95,6 +102,9 @@ insert into skills values
 ('Englisch'),
 ('Spanisch'),
 ('Bildbearbeitung');
+
+select * from skills;
+
 
 insert into ma_skills values
 (1,1), (1,5), (2,3), (3,2), (3,5), (3,6), 
@@ -109,5 +119,4 @@ insert into ma_skills values
 (32,7), (33,6), (34,2),(34,5), (35,4), 
 (36,5), (37,1), (38,2), (38,3);
 
-
-
+select * from ma_skills;
